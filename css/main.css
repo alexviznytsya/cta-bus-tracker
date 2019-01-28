@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+}
+
+.list_template {
+    display: none;
+}
+
+.star_icon_full {
+    text-shadow: 0 0 2px rgba(0,0,0,0.7);
+    color: #FDE16D;
+}
+.star_icon {
+    cursor:pointer;
+}
+
+.mdc-top-app-bar {
+    background-color: #B3DDF2;
+    color: #000000;
+}
+
+.mdc-top-app-bar .mdc-top-app-bar__navigation-icon {
+    color: #000000;
+}
+.mdc-drawer .mdc-list-item--activated {
+    color: #000000;
+}
+
+.material-icons.mdc-list-item__graphic {
+    color: #000000 !important;
+}
+
+:not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item--activated::before, :not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item--activated::after {
+    background-color: #FF0000;
+}
+
+.div-tabbed {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mdc-button.mdc-button--raised {
+    background-color: #B3DDF2;
+    color: #000000;
+}
+
+.default-font {
+    font-family: Roboto,sans-serif; 
+    font-size: 1rem; 
+    line-height: 1.75rem; 
+    font-weight: 400; 
+    letter-spacing: .009375em;
+}

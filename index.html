@@ -1,0 +1,74 @@
+<!--************************************************************
+File:       index.html
+
+Author:     Alex Viznytsya
+
+Project:    CTA Live Bus Tracker
+
+GitHub:     https://github.com/alexviznytsya/cta-live-bus-tracker
+GitPages:   https://alexviznytsya.github.io/cta-live-bus-tracker
+
+Date:       12/02/2018
+************************************************************-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>IT202 - The Big Project - CTA Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+    <link href="css/libraries/material-components-web.min.css" rel="stylesheet">
+    <link href="css/libraries/material-compoinents-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/bus144.png">
+    <link rel="manifest" href="manifest.json">
+    <script src="js/libraries/jquery-3.3.1.min.js"></script>
+    <script src="js/libraries/material-components-web.min.js"></script> 
+    <script src="js/libraries/dexie.min.js"></script>
+</head>
+<body>
+    <aside id="app-top-bar-menu" class="mdc-drawer mdc-drawer--modal">
+        <div class="mdc-drawer__content">
+            <div class="mdc-drawer__header">
+                    <h3 class="mdc-drawer__title">Welcome!</h3>
+                    <h6 class="mdc-drawer__subtitle">name</h6>
+            </div>
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-list-item--activated" data-file="search" href="#" aria-selected="true">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">search</i>
+                    <span class="mdc-list-item__text">Find Stations</span>
+                </a>
+                <a class="mdc-list-item" data-file="tracker" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">schedule</i>
+                    <span class="mdc-list-item__text">Live Tracker</span>
+                </a>
+                <a class="mdc-list-item" data-file="settings" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                    <span class="mdc-list-item__text">Settings</span>
+                </a>
+                <a class="mdc-list-item" data-file="about" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
+                    <span class="mdc-list-item__text">About</span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+               
+    <div class="mdc-drawer-scrim"></div>
+                
+    <header id="app-top-bar" class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        <span class="mdc-top-app-bar__title">CTA Bus Tracker</span>
+        </section>
+    </div>
+    </header>
+          
+    <div class="mdc-top-app-bar--fixed-adjust" ></div>       
+              
+    <div id="app-content"></div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

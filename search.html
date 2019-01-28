@@ -1,0 +1,71 @@
+<!--************************************************************
+File:       search.html
+
+Author:     Alex Viznytsya
+
+Project:    CTA Live Bus Tracker
+
+GitHub:     https://github.com/alexviznytsya/cta-live-bus-tracker
+GitPages:   https://alexviznytsya.github.io/cta-live-bus-tracker
+
+Date:       12/02/2018
+************************************************************-->
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    
+    <body id="page-content">
+        <br>
+        <div class="default-font" style="float:left; width: 100%; text-align: center"><b>SEARCH</b></div>
+        <br><br>
+        <div class="div-tabbed default-font">
+            <div><b>Find Bus Number by Street Crossing:</b></div>
+            <div id="search-street-1" class="mdc-text-field text-field mdc-text-field--outlined">
+                <input type="text" id="text-field--outlined" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="text-field--outlined" style="color: #000000;">Street 1</label>
+                <div class="mdc-notched-outline" style="--mdc-theme-primary: #000000;">
+                    <svg>
+                        <path class="mdc-notched-outline__path" d="M68.75,1h159.04999999999998a4,4 0 0 1 4,4v45.6a4,4 0 0 1 -4,4h-222.6a4,4 0 0 1 -4,-4v-45.6a4,4 0 0 1 4,-4h6.8">
+                        </path>
+                    </svg>
+                </div>
+                <div class="mdc-notched-outline__idle"></div>
+            </div>
+            <br><br>
+            <div id="search-street-2" class="mdc-text-field text-field mdc-text-field--outlined">
+                <input type="text" id="text-field--outlined" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="text-field--outlined" style="color: #000000;">Street 2</label>
+                <div class="mdc-notched-outline" style="--mdc-theme-primary: #000000;">
+                    <svg>
+                        <path class="mdc-notched-outline__path" d="M68.75,1h159.04999999999998a4,4 0 0 1 4,4v45.6a4,4 0 0 1 -4,4h-222.6a4,4 0 0 1 -4,-4v-45.6a4,4 0 0 1 4,-4h6.8">
+                        </path>
+                    </svg>
+                </div>
+                <div class="mdc-notched-outline__idle"></div>
+            </div>
+            <br><br>
+            <button id="search-crossing" class="mdc-button mdc-button--raised">Find</button>
+            <br><br>
+            <div><b>Find Bus Stations by Bus Number:</b></div>
+            <div id="search-stops-by-number" class="mdc-text-field text-field mdc-text-field--outlined">
+                <input type="text" id="text-field--outlined" class="mdc-text-field__input">
+                <label class="mdc-floating-label" for="text-field--outlined" style="color: #000000;">Bus #</label>
+                <div class="mdc-notched-outline" style="--mdc-theme-primary: #000000;">
+                    <svg>
+                        <path class="mdc-notched-outline__path" d="M68.75,1h159.04999999999998a4,4 0 0 1 4,4v45.6a4,4 0 0 1 -4,4h-222.6a4,4 0 0 1 -4,-4v-45.6a4,4 0 0 1 4,-4h6.8">
+                        </path>
+                    </svg>
+                </div>
+                <div class="mdc-notched-outline__idle"></div>
+            </div>
+            <br><br>
+            <button id="search-by-bus" class="mdc-button mdc-button--raised">Find</button>
+            <br><br>
+            <div><b>Find Bus Stops Closest to Me:</b></div>
+            <button id="search-locate" class="mdc-button mdc-button--raised">Locate</button>
+            <div id="locate-error"></div>
+        </div>
+        <br>
+    </body>
+</html>

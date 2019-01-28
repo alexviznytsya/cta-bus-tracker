@@ -1,0 +1,18 @@
+{
+    "short_name": "CTA- LBT",
+    "name": "CTA Live Bus Tracker",
+    "icons": [
+      {
+        "src": "images/bus144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+    "start_url": "index.html",
+    "background_color": "#B3DDF2",
+    "display": "standalone",
+    "scope": "/cta-live-bus-tracker",
+    "theme_color": "#B3DDF2",
+    "orientation": "portrait"
+  }
+  
